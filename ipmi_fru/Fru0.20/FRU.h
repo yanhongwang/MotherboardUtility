@@ -1,0 +1,14 @@
+void FRU_Tital();
+void FRU_Start();
+void FRU_End();
+void Get_Key();
+void Get_Key2();
+void Input_Key();
+void Clear_Update();
+void FRU_String();
+unsigned int FRU_Count(int x,int y,int attr,char *str,unsigned int i,char t,int x2);
+void List_FRU(unsigned char x);
+void Get_FRU_Inventory_Area_Info(unsigned char FRU_ID);
+void Read_FRU(unsigned char FRU_ID,unsigned int x,unsigned char y);
+void Write_FRU(unsigned char FRU_ID,unsigned int x,unsigned char y);
+void Dec2Time(int x,int y,int attr,unsigned long time);

@@ -1,0 +1,1608 @@
+SYSTEM/IPMI
+USER/1
+// File Header Information
+//
+_LF_NAME	'xxxx'
+_LF_PRODUCT	'xxxx'
+_LF_VERSION	'1.011'
+_LF_FMT_VER	'1.0'
+_SDR_VERSION	'0100'
+
+
+_SDR (
+_START_ADDR	0E00
+_DATA_LEN	1293
+_NVS_TYPE	'IMBDEVICE'
+_DEV_BUS	FF
+_DEV_ADDRESS	20
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0001					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   05					// Record Length
+
+   // Record Key Bytes
+   4C4B4A					// Manufacturer ID
+
+   // Record Body Bytes
+   4D		//
+   4E		//
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0002					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   07					// Record Length
+
+   // Record Key Bytes
+   030201					// Manufacturer ID
+
+   // Record Body Bytes
+   04		//
+   05		//
+   06		//
+   07		//
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0003					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   09					// Record Length
+
+   // Record Key Bytes
+   21201F					// Manufacturer ID
+
+   // Record Body Bytes
+   22		//
+   23		//
+   24		//
+   25		//
+   26		//
+   27		//
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0004					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   03					// Record Length
+
+   // Record Key Bytes
+   454443					// Manufacturer ID
+
+   // Record Body Bytes
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0005					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   04					// Record Length
+
+   // Record Key Bytes
+   484746					// Manufacturer ID
+
+   // Record Body Bytes
+   49		//
+
+_SDR_TYPE	C0
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0006					// Record ID
+   01					// SDR Version
+   C0					// Record Type
+   05					// Record Length
+
+   // Record Key Bytes
+   4C4B4A					// Manufacturer ID
+
+   // Record Body Bytes
+   4D		//
+   4E		//
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0007					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   33					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   06					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   10					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D0					// R exp, B exp
+   00					// Analog characteristic flags
+   CE					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   F8					// Upper critical Threshold
+   E3					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   A5					// Lower critical Threshold
+   B9					// Lower non-critical Threshold
+   05					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C8					// Type/Length Code
+   '3.3VDUAL'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0008					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   2F					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   07					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   3D					// M
+   00					// M, Tolerance
+   07					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D1					// R exp, B exp
+   00					// Analog characteristic flags
+   51					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   58					// Upper critical Threshold
+   55					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   4A					// Lower critical Threshold
+   4C					// Lower non-critical Threshold
+   01					// Positive hysterisis value
+   01					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C4					// Type/Length Code
+   'VCC5'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0009					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   32					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   09					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   10					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D0					// R exp, B exp
+   00					// Analog characteristic flags
+   5E					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   71					// Upper critical Threshold
+   68					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   4B					// Lower critical Threshold
+   54					// Lower non-critical Threshold
+   04					// Positive hysterisis value
+   04					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C7					// Type/Length Code
+   'VDDQ1.5'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0010					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   30					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   0A					// Sensor Number
+
+   // Record Body Bytes
+   03					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   E8					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   0000					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   10					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D0					// R exp, B exp
+   00					// Analog characteristic flags
+   65					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   70					// Upper critical Threshold
+   6E					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   5E					// Lower critical Threshold
+   60					// Lower non-critical Threshold
+   01					// Positive hysterisis value
+   01					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C5					// Type/Length Code
+   'Vcore'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0011					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   31					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   0B					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   10					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D0					// R exp, B exp
+   00					// Analog characteristic flags
+   70					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   88					// Upper critical Threshold
+   7C					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   5A					// Lower critical Threshold
+   65					// Lower non-critical Threshold
+   04					// Positive hysterisis value
+   04					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C6					// Type/Length Code
+   'VCC1.8'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0012					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   31					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   0C					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   10					// M
+   00					// M, Tolerance
+   01					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D2					// R exp, B exp
+   00					// Analog characteristic flags
+   C8					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   D9					// Upper critical Threshold
+   D3					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   B7					// Lower critical Threshold
+   BD					// Lower non-critical Threshold
+   05					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C6					// Type/Length Code
+   'VCC3.3'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0013					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   2F					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   0D					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   3D					// M
+   00					// M, Tolerance
+   01					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D2					// R exp, B exp
+   00					// Analog characteristic flags
+   C3					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   EC					// Upper critical Threshold
+   D9					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   9D					// Lower critical Threshold
+   B1					// Lower non-critical Threshold
+   05					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C4					// Type/Length Code
+   '+12V'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0014					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   2F					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   0E					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   02					// Sensor Type
+   01					// Event / Reading Type Code
+   001B					// Assertion Event Mask / Lower Threshold Reading Mask
+   001B					// Deassertion Event Mask / Upper Threshold Reading Mask
+   1B1B					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   04					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   52					// M
+   00					// M, Tolerance
+   6B					// B
+   C0					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   D2					// R exp, B exp
+   00					// Analog characteristic flags
+   23					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   54					// Upper critical Threshold
+   3C					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   01					// Lower critical Threshold
+   0B					// Lower non-critical Threshold
+   05					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C4					// Type/Length Code
+   '-12V'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0015					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   36					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   10					// Sensor Number
+
+   // Record Body Bytes
+   1D					// Entity ID
+   02					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   04					// Sensor Type
+   01					// Event / Reading Type Code
+   0003					// Assertion Event Mask / Lower Threshold Reading Mask
+   0003					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0303					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   12					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   01					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   20					// R exp, B exp
+   00					// Analog characteristic flags
+   28					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   FF					// Upper critical Threshold
+   FF					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   16					// Lower critical Threshold
+   1E					// Lower non-critical Threshold
+   00					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   CB					// Type/Length Code
+   'Housing Fan'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0016					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   36					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   11					// Sensor Number
+
+   // Record Body Bytes
+   1D					// Entity ID
+   03					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   04					// Sensor Type
+   01					// Event / Reading Type Code
+   0003					// Assertion Event Mask / Lower Threshold Reading Mask
+   0003					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0303					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   12					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   01					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   20					// R exp, B exp
+   00					// Analog characteristic flags
+   28					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   FF					// Upper critical Threshold
+   FF					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   16					// Lower critical Threshold
+   1E					// Lower non-critical Threshold
+   00					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   CB					// Type/Length Code
+   'Housing Fan'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0017					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   36					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   12					// Sensor Number
+
+   // Record Body Bytes
+   1D					// Entity ID
+   04					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   04					// Sensor Type
+   01					// Event / Reading Type Code
+   0003					// Assertion Event Mask / Lower Threshold Reading Mask
+   0003					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0303					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   12					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   01					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   20					// R exp, B exp
+   00					// Analog characteristic flags
+   28					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   FF					// Upper critical Threshold
+   FF					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   16					// Lower critical Threshold
+   1E					// Lower non-critical Threshold
+   00					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   CB					// Type/Length Code
+   'Housing Fan'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0018					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   32					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   13					// Sensor Number
+
+   // Record Body Bytes
+   03					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   04					// Sensor Type
+   01					// Event / Reading Type Code
+   0000					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0303					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   12					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   01					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   20					// R exp, B exp
+   00					// Analog characteristic flags
+   28					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   FF					// Upper critical Threshold
+   FF					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   16					// Lower critical Threshold
+   1E					// Lower non-critical Threshold
+   00					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   C7					// Type/Length Code
+   'CPU Fan'
+
+_SDR_TYPE	01
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0019					// Record ID
+   01					// SDR Version
+   01					// Record Type
+   36					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   14					// Sensor Number
+
+   // Record Body Bytes
+   1D					// Entity ID
+   01					// Entity Instance
+   7F					// Sensor Initialization
+   68					// Sensor Capabilities
+   04					// Sensor Type
+   01					// Event / Reading Type Code
+   0000					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0303					// Reading Mask / Settable
+						// Threshold Mask, Readable
+						// Threshold Mask
+   00					// Sensor Units 1
+   12					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   00					// Linearization
+   01					// M
+   00					// M, Tolerance
+   00					// B
+   00					// B, Accuracy
+   00					// Accuracy, Accuracy Exp
+   20					// R exp, B exp
+   00					// Analog characteristic flags
+   28					// Nominal Reading
+   00					// Normal Maximum
+   00					// Normal Minimum
+   FF					// Sensor Maximum Reading
+   00					// Sensor Minimum Reading
+   FF					// Upper non-recoverable Threshold
+   FF					// Upper critical Threshold
+   FF					// Upper non-critial Threshold
+   00					// Lower non-recoverable Threshold
+   16					// Lower critical Threshold
+   1E					// Lower non-critical Threshold
+   00					// Positive hysterisis value
+   05					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// OEM
+   CB					// Type/Length Code
+   'Housing Fan'
+
+_SDR_TYPE	12
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0020					// Record ID
+   01					// SDR Version
+   12					// Record Type
+   17					// Record Length
+
+   // Record Key Bytes
+   20					// Device Slave Address
+
+   // Record Body Bytes
+   88					// Power State Notif ication// Global Initialization
+   BF					// Device Capabilities
+   00					// reserved
+   00					// reserved
+   00					// reserved
+   00					// reserved
+   00					// Entity ID
+   00					// Entity Instance
+   00					// OEM
+   CC					// Device ID String Type/Length
+   'BMC/SDR1.0hG'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0021					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   2B					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   15					// Sensor Number
+
+   // Record Body Bytes
+   03					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   C1					// Sensor Capabilities
+   07					// Sensor Type
+   6F					// Event / Reading Type Code
+   0003					// Assertion Event Mask / Lower Threshold Reading Mask
+   0083					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0083					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   D0					// Type/Length Code
+   'Processor Status'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0022					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   29					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   16					// Sensor Number
+
+   // Record Body Bytes
+   1B					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CE					// Type/Length Code
+   'Key/Mouse Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0023					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   26					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   18					// Sensor Number
+
+   // Record Body Bytes
+   1A					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CB					// Type/Length Code
+   'SCSI 1 Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0024					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   26					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   19					// Sensor Number
+
+   // Record Body Bytes
+   1A					// Entity ID
+   02					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CB					// Type/Length Code
+   'SCSI 2 Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0025					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   28					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   1A					// Sensor Number
+
+   // Record Body Bytes
+   1B					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CD					// Type/Length Code
+   'Back USB Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0026					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   29					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   1B					// Sensor Number
+
+   // Record Body Bytes
+   1B					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CE					// Type/Length Code
+   'Front USB Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0027					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   29					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   1C					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   23					// Sensor Initialization
+   41					// Sensor Capabilities
+   C0					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0002					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0002					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CE					// Type/Length Code
+   'VGA Power Fuse'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0028					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   1E					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   27					// Sensor Number
+
+   // Record Body Bytes
+   07					// Entity ID
+   01					// Entity Instance
+   65					// Sensor Initialization
+   40					// Sensor Capabilities
+   13					// Sensor Type
+   6F					// Event / Reading Type Code
+   0009					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0009					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   C3					// Type/Length Code
+   'NMI'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0029					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   23					// Record Length
+
+   // Record Key Bytes
+   20					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   28					// Sensor Number
+
+   // Record Body Bytes
+   13					// Entity ID
+   01					// Entity Instance
+   65					// Sensor Initialization
+   40					// Sensor Capabilities
+   09					// Sensor Type
+   6F					// Event / Reading Type Code
+   0010					// Assertion Event Mask / Lower Threshold Reading Mask
+   0010					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0010					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   C8					// Type/Length Code
+   'A/C lost'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0030					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   25					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   02					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   0C					// Sensor Type
+   6F					// Event / Reading Type Code
+   0003					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CA					// Type/Length Code
+   'Memory ECC'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0031					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   28					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   03					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   02					// Sensor Capabilities
+   10					// Sensor Type
+   6F					// Event / Reading Type Code
+   000D					// Assertion Event Mask / Lower Threshold Reading Mask
+   0009					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CD					// Type/Length Code
+   'Event Disable'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0032					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   25					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   04					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   0F					// Sensor Type
+   00					// Event / Reading Type Code
+   0000					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CA					// Type/Length Code
+   'POST Error'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0033					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   24					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   05					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   13					// Sensor Type
+   6F					// Event / Reading Type Code
+   0030					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   C9					// Type/Length Code
+   'PCI Error'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0034					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   27					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   06					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   12					// Sensor Type
+   6F					// Event / Reading Type Code
+   0001					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CC					// Type/Length Code
+   'System Event'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0035					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   22					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   07					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   1F					// Sensor Type
+   6F					// Event / Reading Type Code
+   0040					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   C7					// Type/Length Code
+   'OS Boot'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0036					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   28					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   08					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   0E					// Sensor Type
+   00					// Event / Reading Type Code
+   0000					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   CD					// Type/Length Code
+   'Memory Resize'
+
+_SDR_TYPE	02
+_SDR_TAG	'ASPEN'
+_SDR_TAG	'BMC'
+_REC_LEN	0005
+
+   // Sensor Record Header
+   0037					// Record ID
+   01					// SDR Version
+   02					// Record Type
+   24					// Record Length
+
+   // Record Key Bytes
+   01					// Sensor Owner ID
+   00					// Sensor Owner LUN
+   09					// Sensor Number
+
+   // Record Body Bytes
+   22					// Entity ID
+   01					// Entity Instance
+   22					// Sensor Initialization
+   01					// Sensor Capabilities
+   0C					// Sensor Type
+   03					// Event / Reading Type Code
+   0002					// Assertion Event Mask / Lower Threshold Reading Mask
+   0000					// Deassertion Event Mask / Upper Threshold Reading Mask
+   0000					// Reading Mask / Settable
+						//  Threshold Mask, Readable
+						//  Threshold Mask
+   00					// Sensor Units 1
+   00					// Sensor Units 2 - Base Unit
+   00					// Sensor Units 3 - Modifier Unit
+   8101					// Sensor Record Sharing
+   00					// Positive hysterisis value
+   00					// Negative hysterisis value
+   00					// Reserved1
+   00					// Reserved2
+   00					// Reserved3
+   00					// OEM
+   C9					// Type/Length Code
+   'No Memory'
+
+)

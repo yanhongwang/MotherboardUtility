@@ -1,0 +1,106 @@
+;**************************************************************;
+;*********  display charctor     offset, length,id,data    ****;
+;********                                      B:binary    ****;
+;********                                      S:string    ****;
+;********                                      T:time info ****;
+;********                                      C:checksum  ****;
+
+[[Kir/HWID=0311]]
+[[Kir-R/HWID=0312]]
+    <<BASE>> HDL=0
+        BLK=HEADER,OFFSET=00,
+            FORMAT,                 00,     01, B, 01
+            INTERNAL,               01,     01, B, 01
+            CHASSIS,                02,     01, B, 09
+            BOARD,                  03,     01, B, 0D
+            PRODUCT,                04,     01, B, 15
+            MULTI RECORD,           05,     01, B, 00
+            PAD,                    06,     01, B, 00
+            CHECKSUM,               07,     01, C,
+            ,,,,
+
+        BLK=INTERNAL,OFFSET=08,
+            FORMAT,                 00,     01, B,  01
+            RECORD ID TYPE,         01,     01, B,  02
+            UUID FORMAT,            02,     01, B,  00
+            RECORD LENGTH,          03,     01, B,  10
+            RECODE CHECKSUM,        04,     01, B,  88
+            HEADER CHECKSUM,        05,     01, B,  66
+            UUID(MAC),              06,     06, B,  000102030405
+            UUID(Closk),            0C,     02, B,  0607
+            UUID(Time High),        0E,     02, B,  0809
+            UUID(Time mid),         10,     02, B,  0A0B
+            UUID(Time low),         12,     04, B,  0C0D0E0F
+            RECORD ID TYPE,         16,     01, B,  03
+            OEM INFORMATION FORMAT, 17,     01, B,  80
+            RECORD LENGTH,          18,     01, B,  10
+            RECODE CHECKSUM,        19,     01, B,  FE
+            HEADER CHECKSUM,        1A,     01, B,  6F
+            OEM INFORMATION,        1B,     10, S,  0123456789ABCDEF
+            PAD,                    2B,     13, B,  00
+            LOAD FILE VERSION,      3E,     02, B,  0000
+           ,,,,
+
+        BLK=CHASSIS,OFFSET=48,
+            FORMAT,                 00,     01, B,  01
+            AREA LENGTH,            01,     01, B,  04
+            CHASSIS TYPE,           02,     01, B,  17
+;                                                   Rack Mount
+            CHASSIS PART LENGTH,    03,     01, B,  CE
+            CHASSIS PART BYTE,      04,     0E, S,  856-123321-001
+            SERIAL NUMBER LENGTH,   12,     01, B,  C2
+            SERIAL NUMBER,          13,     02, S,  01
+;                                                   Rack Mount
+            CHARACTERISTICS LENGTH, 15,     01, B,  C2
+            CHARACTERISTICS,        16,     02, S,  01
+;                                                   Lock/Open sensor Unknown
+            END INFORMATION,        18,     01, B,  C1
+            PAD,                    19,     06, B,  00
+            CHECKSUM,               1F,     01, C,
+            ,,,,
+
+        BLK=BOARD,OFFSET=68,
+            FORMAT,                 00,     01, B,  01
+            AREA LENGTH,            01,     01, B,  08
+            UNICODE LANGUAGE,       02,     01, B,  19
+            MFG.DATE/TIME,          03,     03, T,
+            MANUFACTURE LENGTH,     06,     01, B,  C8
+            BOARD MANUFACTURE,      07,     08, S,  GigaByte
+            PRODUCT NAME LENGTH,    0F,     01, B,  C9
+            BOARD PRODUCT NAME,     10,     09, S,  8IKHXR-NJ
+            SERIAL NUMBER LENGTH,   19,     01, B,  CA
+            BOARD SERIAL NUMBER,    1A,     0C, S,  012345678900
+;                                                   12 digit
+            BOARD PART LENGTH,      26,     01, B,  CE
+            BOARD PART BYTE,        27,     0E, S,  856-123320-001
+            VERSION LENGTH,         35,     01, B,  C3
+            BOARD VERSION,          36,     03, S,  0.3
+            END INFORMATION,        39,     01, B,  C1
+            PAD,                    3A,     05, B,  00
+            CHECKSUM,               3F,     01, C,
+            ,,,,
+
+        BLK=PRODUCT,OFFSET=A8,
+            FORMAT,                 00,     01, B,  01
+            AREA LENGTH,            01,     01, B,  0B
+            UNICODE LANGUAGE,       02,     01, B,  19
+            MANUFACTURE LENGTH,     03,     01, B,  C3
+            BOARD MANUFACTURE,      04,     03, S,  NEC
+            PRODUCT NAME LENGTH,    07,     01, B,  D3
+            PRODUCT NAME,           08,     13, S,  Express5800/110Re-1
+            PRODUCT PART LENGTH,    1B,     01, B,  CB
+            PRODUCT PART BYTE,      1C,     0B, S,  [N8100-937]
+            VERSION LENGTH,         27,     01, B,  C5
+            PRODUCT VERSION,        28,     05, S,  FR1.0
+            SERIAL NUMBER LENGTH,   2D,     01, B,  CA
+            PRODUCT SERIAL NUMBER,  2E,     0A, S,  KIR-R00001
+;                                                   10 digit
+            ASSET TAG LENGTH,       38,     01, B,  CE
+            ASSET TAG BYTE,         39,     0E, S,  243-407691-937
+            END INFORMATION,        47,     01, B,  C1
+            PAD,                    48,     0F, B,  00
+            CHECKSUM,               57,     01, C,
+            ,,,,
+
+
+

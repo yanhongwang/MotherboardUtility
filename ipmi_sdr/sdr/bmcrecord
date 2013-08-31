@@ -1,0 +1,22 @@
+
+		.dw 0x32				/* Record ID*/
+		.db 0x51				/* SDR Version*/
+		.db 0x12				/* Record Type*/
+		.db 11 + sizeof "BMC/SDR13xxhx"		/* Record Length = 11 + string length */
+
+		/* Record Key Bytes*/
+		.db 0x20				/* Sensor Owner ID*/
+	
+		/* Record Body Bytes*/
+		.db 0x88				/* power state notification*/
+		.db 0xBF				/* Entity Instance*/
+		.db 0					/* RESERVED*/
+		.db 0					/* RESERVED*/
+		.db 0					/* RESERVED*/
+		.db 0					/* RESERVED*/
+		.db 0x00				/* Entity ID*/
+		.db 0x00				/* Entity Instance*/
+		.db 0x0					/* OEM*/
+		.db 0xc0 + sizeof "BMC/SDR13xxhx"	/* ID String Type / Length Code*/
+		.db "BMC/SDR13xxhx"
+		

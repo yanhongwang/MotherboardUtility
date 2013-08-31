@@ -1,0 +1,70 @@
+_LF_NAME	'xxxx'
+_LF_VERSION	'1.011'
+_LF_FMT_VER	'1.0'
+_SDR_VERSION	'0100'
+
+
+_FRU (
+_START_ADDR	0000
+_DATA_LEN	0040
+_NVS_TYPE	'IMBDEVICE'
+_DEV_BUS	FF
+_DEV_ADDRESS	20
+
+_SEE_COMMON				// NVS Common Header area contents 00-07h (8 bytes)
+   01					// Common Header Format Version
+   00					// Internal Use Area Offset in multiples of 8 bytes
+   01					// Chassis Information Area Starting Offset in multiples of 8 bytes
+   03					// Board Area Starting Offset in multiples of 8 bytes
+   08					// Product Information Area Starting Offset in multiples of 8 bytes
+   0f					// MultiRecord Information Area Starting Offset in multiples of 8 bytes
+   00					// PAD (1 byte)
+   e4					// Common Header Checksum (2's complement)
+
+_SEE_CHASSIS			// NVS Chassis Info area contents 08h-40h  (56 bytes)
+   01					// Chassis info area format version
+   02					// Chassis info area length in multiples of 8 bytes
+   11					// Chassis type (Main server chassis)
+   c3					// Chassis part number type/length byte
+   'N/A'
+   c3					// Chassis serial number type/length byte
+   'N/A'
+   c1					// no more fields type/length byte
+
+_SEE_BOARD				// NVS Board Info area contents 18h-40h  (40 bytes)
+   01					// Board Area Format Version
+   05					// Board Area Length (in multiples of 8 bytes)
+   00					// Language Code (See section 15)
+   00 00 00				// Mfg. Date / Time
+   c8					// Board Manufacturer type/length byte
+   'Gigabyte'
+   c7					// Board Product Name type/length byte
+   '8EGXDRB'
+   c3					// Board Serial Number type/length byte
+   'N/A'
+   c3					// Board Part Number type/length byte
+   'N/A'
+   c3					// FRU File ID type/length byte
+   'N/A'
+   c1					// no more fields type/length byte
+
+_SEE_PRODUCT				// NVS Product Info area contents 40h-40h  (0 bytes)
+   01					// Product Area Format Version
+   07					// Product Area Length (in multiples of 8 bytes)
+   00					// Language Code (See section 15)
+   c7					// Manufacturer Name type/length byte
+   'HITACHI'
+   ca					// Product Name type/length byte
+   'HA8000/130'
+   c3					// Product Part/Model Number type/length byte
+   'N/A'
+   ca					// Product Version type/length byte
+   '0000130200'
+   c3					// Product Serial Number type/length byte
+   'N/A'
+   c3					// Asset Tag type/length byte
+   'N/A'
+   c3					// FRU File ID type/length byte
+   'N/A'
+   c1					// no more fields type/length byte
+}
